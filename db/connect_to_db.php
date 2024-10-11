@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
-    $username = "root"; // nel progetto -> s5038815
-    $password = ""; // nel progetto -> wasottegorp
+    $username = "root";
+    $password = ""; 
     $dbname = "s5038815";
 
     // approccio object-oriented.
