@@ -1,0 +1,205 @@
+.container {
+    height: 370px;
+    width: 370px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.moon {
+    background-color: #fd7dff;
+    height: 200px; 
+    width: 200px; 
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 80px; 
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.crater {
+    background-color: #ff31f8;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.crater:before {
+    content: '';
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: -5px 0 0 2px #cd1cf9;
+    top: 2px;
+    left: 7px;
+}
+
+.c1 {
+    top: 27px;
+    left: 90px;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+}
+
+.c2 {
+    transform: scale(0.6);
+    bottom: 15px;
+    left: 61px;
+}
+
+.c3 {
+    transform: scale(0.75);
+    left: 15px;
+}
+
+.c4 {
+    transform: scale(1.18);
+    left: 107px;
+    top: 32px;
+}
+
+.c5 {
+    transform: scale(0.67);
+    left: 33px;
+    bottom: 4px;
+}
+
+.shadow {
+    height: 190px;
+    width: 190px;
+    box-shadow: 21px 0 0 5px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    position: relative;
+    bottom: 157.5px;
+    right: 46px;
+}
+
+.eye {
+    height: 12px;
+    width: 12px;
+    background-color: #421646;
+    border-radius: 50%;
+    position: relative;
+}
+
+.eye.el {
+    bottom: 255px;
+    left: 59px;
+}
+
+.eye.er {
+    bottom: 267px;
+    left: 101px;
+}
+
+.mouth {
+    height: 5px;
+    width: 10px;
+    position: relative;
+    border: 3px solid #431646;
+    border-top: none;
+    bottom: 262px;
+    left: 79px;
+    border-radius: 0 0 10px 10px;
+}
+
+.blush{
+    height: 7.5px;
+    width: 7.5px;
+    background-color: #f91cf9;
+    position: relative;
+    border-radius: 50%;
+}
+
+.b1 {
+    bottom: 273px;
+    left: 50px;
+}
+
+.b2 {
+    bottom: 281px;
+    left: 115px;
+}
+
+.orbit {
+    height: 80px;
+    width: 280px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.rocket {
+    background-color: #faf7fc;
+    height: 50px; /* Probabile errore: manca il valore del colore di sfondo */
+    width: 25px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    left: -11px;
+    top: 115px;
+    bottom: 50px;
+}
+
+.rocket:before {
+    position: absolute;
+    content: '';
+    background-color: #c039ff; /* Aggiunto il colore di sfondo */
+    height: 20px;
+    width: 55px;
+    right: -15px;
+    border-radius: 50% 50% 0 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.rocket:after {
+    position: absolute;
+    content: ''; 
+    background-color: #d439ff;
+    height: 4px;
+    width: 15px;
+    border-radius: 0 0 2px 2px;
+    bottom: -4px;
+    left: 4.3px;
+}
+
+.window {
+    height: 10px;
+    width: 10px;
+    background-color: #441545; 
+    border: 2px solid #ecb8ec; 
+    border-radius: 50%;
+    position: relative;
+    top: 17px;
+    left: 5px;
+}
+
+h1 {
+    position: absolute; 
+    top: 1000px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    white-space: nowrap; 
+    color: #7c0a69;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
